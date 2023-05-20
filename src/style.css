@@ -1,0 +1,51 @@
+@font-face {
+    display: flex;
+    font-family: 'Cocogoose';
+    src: url(./fonts/Cocogoose.otf);
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(9, 48, 30);
+    padding: 0px 20px 0px 20px;
+    font-size: 24px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Cocogoose;
+    font-weight: 500;
+    color: white;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -ms-box-sizing:border-box; 
+}
+
+.navLinks {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.link {
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.link:hover {
+    /* maybe do like a cool invert negative color thingy*/
+    background-color: #8585E9;
+    scale: 1.07;
+}
