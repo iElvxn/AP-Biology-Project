@@ -13,6 +13,14 @@
     src: url(./fonts/PublicPixel-z84yD.ttf);
 }
 
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -46,34 +54,34 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     gap: 5px;
     height: 100%;
 }
 
 .logo {
+    position: relative;
     width: 45px;
     height: 45px;
     background-repeat: no-repeat;
 }
 
 .navLinks {
+    position: relative;
     height: 100%;
     align-items: center;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     gap: 10px;
     font-size: 15px;
     font-weight: 700;
     list-style-type: none;
-    flex-wrap: wrap;
     font-family: Arvo;
 }
 
 .link {
     padding: 5px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .link:hover {
@@ -103,21 +111,22 @@ body {
     text-align: center;
 }
 
-#home-section1-text {
+.section-header {
+    text-transform: capitalize;
     padding: 25px;
     font-family: 'Retro';
     font-weight: 900;
     font-size: 45px;
 }
 
-#home-section1-fact {
+.fun-fact {
     margin-top: -15px;
     padding: 25px;
     font-family: 'Cocogoose';
     font-size: 14px;
 }
 
-.learn-more-btn {
+#learn-more-btn {
     padding: 10 0px 10px 0px;
     font-family: 'Cocogoose';
     font-size: 14px;
@@ -127,7 +136,7 @@ body {
     cursor: pointer;
 }
 
-.learn-more-btn:hover {
+#learn-more-btn:hover {
     scale: 1.15;
 }
 
@@ -173,7 +182,6 @@ body {
     text-align: center;
     font-family: 'Retro';
     font-size: 36px;
-    color: rgb(119, 199, 199);
 }
 
 .infoCardInfo {
@@ -196,22 +204,166 @@ body {
     margin-top: 30px;
     margin-bottom: 50px;
     background-position: center center;
+    cursor: none;
 }
 
-.infoCardImage:hover {
+.infoCardImage:hover,
+.info-btn:hover {
     scale: 1.07;
-    cursor: none;
     box-shadow: 0 0 17px 3px #39c0cc;
 }
 
+.info-btn {
+    padding: 10px 15px 10px 15px;
+    font-family: 'Retro';
+    font-size: 16px;
+    background-color: #F1C24D;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#water-card {
+    background-color: #5ABDA8;
+}
+#water-title {
+    color: #274B61;
+}
 #water-gif {
     background-image: url(images/Water.gif);
 }
 
+#macromolecules-card {
+    background-color: rgb(19, 53, 53);
+}
+#macromolecules-title {
+    color: rgb(119, 199, 199);;
+}
 #macromolecules-gif {
     background-image: url(images/Protein.gif);
 }
 
+#dnarna-card {
+    background-color: #274B61;
+}
+#dnarna-title {
+    color: rgb(24, 63, 63);
+}
 #dnarna-gif {
     background-image: url(images/DNA.gif);
 }
+
+#water-section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -58px;
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcfc;
+}
+
+#water-section1-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 910px;
+    height: 500px;
+}
+
+#water-section1-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#water-section1-title {
+    color: #5ABDA8;
+}
+
+#water-section1-fact {
+    color: #93beb5;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#water-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+#water-section2-left {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    background-color: #312e35;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section2-left-header {
+    color: #5ABDA8;
+    font-family: 'Retro';
+    font-size: 24px;
+    text-align: center;
+}
+
+.section2-left-info {
+    padding: 25px 75px 25px;
+    color: #d6e9e5;
+    font-family: 'Cocogoose';
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.section2-right {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #fcfcfc;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2-right-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.section2-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.section2-right-header {
+    font-family: 'Retro';
+    align-items: center;
+    font-size: 16px;
+}
+
+.section2-right-info {
+    color: #d6e9e5;
+    font-family: 'Cocogoose';
+    font-weight: 100;
+    font-size: 14px;
+    text-align: left;
+}
+
