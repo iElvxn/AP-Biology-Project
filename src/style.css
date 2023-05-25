@@ -86,8 +86,21 @@ body {
 
 .link:hover {
     /* maybe do like a cool invert negative color thingy*/
-    background-color: #8585E9;
+    background-color: #1c1c1d;
+    color: white;
     scale: 1.07;
+}
+
+.footer {
+    background-color: #2d3130;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5ABDA8;
+    font-size: 12px;
+    font-family: "Retro";
 }
 
 #home-section1 {
@@ -127,16 +140,18 @@ body {
 }
 
 #learn-more-btn {
-    padding: 10 0px 10px 0px;
-    font-family: 'Cocogoose';
-    font-size: 14px;
-    background-color: #11393d;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Retro';
+    font-size: 12px;
+    background-color: #5ABDA8;
     color: #fcfcfc;
-    border-radius: 7px;
+    border-radius: 14px;
+    border: none;
     cursor: pointer;
 }
 
 #learn-more-btn:hover {
+    background-color: #274B61;
     scale: 1.15;
 }
 
@@ -269,7 +284,7 @@ body {
     background-size: cover;
     width: 100%;
     max-width: 910px;
-    height: 500px;
+    height: 100%;
 }
 
 #water-section1-right {
@@ -296,8 +311,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    height: 100%;
     width: 100%;
+    background-color: #fcfcfc;;
 }
 
 #water-section2-left {
@@ -323,17 +339,24 @@ body {
     color: #d6e9e5;
     font-family: 'Cocogoose';
     font-weight: 100;
-    font-size: 18px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
 }
 
 .section2-right {
-    padding: 50px;
+    padding: 25px;
     width: 100%;
     height: 100%;
     display: flex;
     background-color: #fcfcfc;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
+    flex-direction: row;
 }
 
 .section2-right-img {
@@ -341,8 +364,12 @@ body {
     background-size: cover;
     width: 100%;
     height: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.section2-right-img:hover {
+    scale: 1.5;
 }
 
 .section2-right-content {
@@ -354,16 +381,161 @@ body {
 }
 
 .section2-right-header {
+    color: #F5C34D;
     font-family: 'Retro';
     align-items: center;
     font-size: 16px;
+    text-align: center;
 }
 
 .section2-right-info {
-    color: #d6e9e5;
+    padding: 20px;
+    color: #2d3130;
     font-family: 'Cocogoose';
     font-weight: 100;
     font-size: 14px;
     text-align: left;
+    list-style: none;
+    height: 100%;
 }
 
+li.info:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+li.info:before {
+    content: "\1F846";
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.section3-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 750px;
+    width: 100%;
+}
+
+.section3-left,
+.section3-mid,
+.section3-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3-left-part {
+    width: 15%;
+    height: 100%;
+    background-color: #312e35;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3-left-part-top,
+.section3-left-part-bot {
+    z-index: 3; /*this is to make the left part show over ther black bottom line.*/
+    width: 100%;
+    height: 50%;
+}
+
+.section3-left-part-bot {
+    background-color: #F1C24D;
+}
+
+.section3-mid {
+    background-color: #F5C34D;
+}
+
+.section3-left, .section3-right{
+    background-color: #7EFADC;
+}
+
+.section3-header {
+    padding: 25px;
+    font-family: 'Retro';
+    font-size: 24px;
+    color: #312e35;
+}
+
+#water-section3-left-header {
+    color: #F1C24D;
+}
+
+.section3-info {
+    font-family: 'Arvo';
+    font-weight: 700;
+    color: #073b2f;
+    padding: 0px 25px;
+    text-align: left;
+    list-style: none;
+    
+}
+
+.section3-img {
+    padding: 25px;
+    width: 75%;
+    height: auto;   
+}
+
+.black-bottom {
+    margin-top: -25px;
+    z-index: 1;
+    width: 100%;
+    height: 25px;
+    background-color: #2d3130;
+}
+
+.section4-header {
+    display: flex;
+    font-family: 'Retro';
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #274B61;
+    color: #5ABDA8;
+}
+
+.section4 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #274B61;
+    color: #a8e2d6;
+}
+
+.section4-sources {
+    font-family: 'Cocogoose';
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 0px 25px 75px;
+    width: 65%;
+    height: 100%;
+}
+
+.section4-right {
+    width: 35%;
+    height: 100%;
+}
+
+a {
+    color: #F1C24D  ;
+}

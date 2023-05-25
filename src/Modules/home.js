@@ -79,12 +79,19 @@ const loadHome = (() => {
         content.append(section1, section2);
     }
 
+    const createFooter = () => {
+        const footer = dom.createDom('div', 'footer');
+        footer.innerHTML = 'Built by Elvin'
+        content.append(footer);
+    }
+
     const loadHomePage = () => {
         createHeader();
         createHomePage();
+        createFooter();
     }
 
-    return { createHeader, createHomePage, loadHomePage }
+    return { createHeader, createHomePage, createFooter, loadHomePage }
 })();
 
 
