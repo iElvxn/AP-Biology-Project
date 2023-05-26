@@ -17,9 +17,9 @@ const loadHome = (() => {
         home.innerHTML = 'Home';
         const water = dom.createDom('li', 'link', 'water-btn');
         water.innerHTML = 'Water';
-        const macromolecules = dom.createDom('li', 'link');
+        const macromolecules = dom.createDom('li', 'link', 'macromolecules-btn');
         macromolecules.innerHTML = 'Macromolecules';
-        const dna = dom.createDom('li', 'link');
+        const dna = dom.createDom('li', 'link', 'dnarna-btn');
         dna.innerHTML = 'DNA & RNA Structure';
     
         links.append(home, water, macromolecules, dna);

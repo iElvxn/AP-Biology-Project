@@ -6,12 +6,12 @@ function loadWaterPage() {
     loadHome.createHeader();
 
     //section 1
-    const section1 = dom.createDom('section', null, 'water-section1');
-    const section1Right = dom.createDom('div', null, 'water-section1-right');
-    const section1Image = dom.createDom('img', null, 'water-section1-image');
+    const section1 = dom.createDom('section', 'section1', 'water-section1');
+    const section1Right = dom.createDom('div', 'section1-right', 'water-section1-right');
+    const section1Image = dom.createDom('img', 'section1-image', 'water-section1-image');
     section1Image.src = "images/WaterSplash.png"
 
-    const section1Text = dom.createDom('div', 'section-header', 'water-section1-text');
+    const section1Text = dom.createDom('div', 'section1-header', 'water-section1-text');
     section1Text.innerHTML = 'Water Properties';
     const section1FunFact = dom.createDom('div', 'fun-fact', 'water-section1-fact');
     section1FunFact.innerHTML = "Fun Fact: There is the same amount of water on Earth as there was when the Earth was formed. The water from your faucet could contain molecules that dinosaurs drank.";
