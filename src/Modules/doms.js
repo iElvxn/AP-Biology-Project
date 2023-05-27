@@ -10,6 +10,41 @@ const dom = (() => {
         const macromoleculesBtn = document.querySelectorAll('#macromolecules-btn');
         //const dnaBtn = document.querySelectorAll('#dnarna-btn');
 
+        const track = document.querySelector('.card-track')
+
+        window.onmousedown = (e) => {
+            track.dataset.mouseDownAt = e.clientX;
+        }
+
+        window.onmouseup = (e) => {
+            track.dataset.mouseDownAt = "0";
+            track.dataset.prevPercentage = track.dataset.percentage;  
+        }
+
+        window.onmousemove = (e) => {
+            event.preventDefault()
+
+            if(track.dataset.mouseDownAt === "0"){
+                return;
+            }
+            const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
+            const maxDelta = window.innerWidth;
+
+            const percentage = (mouseDelta / maxDelta) * -100;
+            const nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
+            console.log(nextPercentage)
+            if(nextPercentage <= -60){
+                nextPercentage = -60;
+            }
+            if(nextPercentage >= 10){
+                nextPercentage = 10;
+            }
+            
+
+            track.dataset.percentage = nextPercentage;
+            track.style.transform = `translate(${nextPercentage}%, 0%)`;
+        }
+
         homeBtn.forEach(btn => {
             btn.addEventListener('click', () => {
                 loadPage('home');

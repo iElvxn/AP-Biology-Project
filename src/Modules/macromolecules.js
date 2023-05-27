@@ -67,6 +67,8 @@ function loadMacroPage() {
         <li class='info'>Many macromolecules are polymers, which is a molecule made up of polymers.</li>
         <li class='info'>Monomers - A molecule that is a building block for larger molecules (polymers). For example, an amino acid acts as the building blocks for proteins.</li>
         <li class='info'>The four main macromolecules are proteins, lipids, nucleic acids, and carbohydrates.</li>
+        <li class='info'>Dehydration synthesis - the joining of molecules by removing a water molecule.</li>
+        <li class='info'>Hydrolysis - the breaking down of molecules by adding a water molecule.</li>
     </ul>
     `;
 
@@ -90,79 +92,148 @@ function loadMacroPage() {
     section2.append(section2left, section2right)
 
     //section 3
-    const section3 = dom.createDom('section', 'section3', 'watmacroer-section3');
+    const section3 = dom.createDom('section', 'section3', 'macro-section3');
     const section3Content = dom.createDom('section', 'section3-content', 'macro-section3-content');
-    const section3left = dom.createDom('div', 'section3-left', 'macro-section3-left');
-    const section3mid = dom.createDom('div', 'section3-mid', 'macro-section3-mid');
-    const section3right = dom.createDom('div', 'section3-right', 'macro-section3-right');
-    const section3rightest = dom.createDom('div', 'section3-rightest', 'macro-section3-4');
-    const section3LeftPart = dom.createDom('div', 'section3-left-part', 'macro-section3-left-part');
-    const section3LeftPartTop = dom.createDom('div', 'section3-left-part-top', 'macro-section3-left-part-top');
-    const section3LeftPartBot = dom.createDom('div', 'section3-left-part-bot', 'macro-section3-left-part-bot');
+
+    section3Content.innerHTML = `
+        <div class='card-track' id='macro-section3-card-track' data-mouse-down-at="0" data-prev-percentage="0">
+            <div class="section3-card" id="proteins-card">
+                <h1 class='section3-header'>Proteins</h1>
+                <div class='section3-card-content'>
+                    <div class='section3-card-top'>
+                        <div class='section3-card-top-left'>
+                            <div class="section3-card-header">What Are Proteins?</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Proteins are a type of macromolecule that are composed of monomers called amino acids that are linked into polymers by bonds known as peptide bonds to create proteins.</li>
+                                <li class='info'>Amino acids are formed by attaching an amine group, a carboxyl group, and a R-group to a central atom of carbon.</li>
+                                <li class='info'>There are 20 common amino acids, and they differ by their R Groups which gives them characteristics like polar/hydrophilic, nonpolar/hydrophobic.</li>
+                                <li class='info'>Proteins are created through the linkage of amino acids via peptide bonds, earning them the alternative name of polypeptides. The formation of peptide bonds between these amino acids occurs through a process known as dehydration synthesis. </li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-top-right'>
+                            <div class="section3-card-header">Functions</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Proteins' functions are determined by their shape. Any changes, such as denaturation, to the protein's shape may cause the protein to be unfunctional.</li>
+                                <li class='info'>Enzymes are proteins that help facilitate biochemical reactions in our bodies by decreasing the activation energy necessary for a chemical reaction to occur.</li>
+                                <li class='info'>Transport: transport proteins carry small molecules and ions across cell membranes and throughout the body. Some examples are carrier and channel proteins.</li>
+                                <li class='info'>Signaling: proteins are involved in cell signaling pathways, transmitting signals within and between cells. Receptor proteins on cell membranes detect and bind to specific molecules, triggering a cascade of intracellular events.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='section3-card-bot'>
+                        <div class='section3-card-bot-left' id='section3-card-img'>
+                            <div class="section3-card-header">Structure</div>
+                            <ul class='section3-info'>
+                                <li class='info'>The four structure types are primary, secondary, tertiary, and quaternary.</li>
+                                <li class='info'>The primary structure of a protein is the unique sequence of a string of amino acids.</li>
+                                <li class='info'>The secondary structure of a protein refers to its local folding patterns, such as alpha helices and beta sheets. The hydrogen bonds cause the amino acid chain to fold or coil.</li>
+                                <li class='info'>The tertiary structure of a protein refers to its 3D spatial conformation, or in other words, how its secondary structure (its alpha helix or beta sheet or both) folds itself up in its interior. </li>
+                                <li class='info'>The quaternary structure of a protein refers to the arrangement and interaction of multiple protein subunits to form a functional protein complex. </li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-bot-right' id="section3-card-img-container">
+                            <img class="section3-card-img" id='protein-card-img'><img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-card" id="lipids-card">
+                <h1 class='section3-header'>Lipids</h1>
+                <div class='section3-card-content'>
+                    <div class='section3-card-top'>
+                        <div class='section3-card-top-left'>
+                            <div class="section3-card-header">What Are Lipids?</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Lipids are a type of macromolecule that are composed of carbon, hydrogen, and oxygen atoms.</li>
+                                <li class='info'>Lipids are grouped together because of their hydrophobic qualities, as a result, all lipids are insoluble in water.</li>
+                                <li class='info'>There are three main families of lipids: fats, phospholipids, and steroids. Let’s look at each of these in a bit more detail down below.</li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-top-right'>
+                            <div class="section3-card-header">Functions</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Fats: Fats are incredibly important for energy storage and protects the organs as well as insulate the body.</li>
+                                <li class='info'>Phospholipids: Phospholipids serve essential functions in the structure of cell membranes. The structure of phospholipids allows them to form bilayers in cell membranes, creating a barrier between the cell and its environment.</li>
+                                <li class='info'>Steroids: Cholesterol is a component of the plasma membranes in animal cells that helps keep membranes flexible and fluid. It is also the precursor to many other important steroids, such as the sex hormones testosterone, estradiol, and progesterone.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='section3-card-bot'>
+                        <div class='section3-card-bot-left' id='section3-card-img'>
+                            <div class="section3-card-header">Types</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Fats: consists of three fatty acid molecules bonded to a glycerol molecule. Thus they are also know as triglycerides.</li>
+                                <li class='info sub'>The fatty acids are linked to the glycerol backbone through the process of dehydration synthesis.</li>
+                                <li class='info sub'>Saturated fats contain only single bonds between carbon atoms. Unsaturated fatty acids have at least one double bond in their chains.</li>
+                                <li class='info'>Phospholipids: consists of two fatty acids and a phosphate group (PO4) bound to glycerol. </li>
+                                <li class='info sub'>While the fatty acid tails are hydrophobic, the PO4 head of a phospholipid is hydrophilic. </li>
+                                <li class='info'>Steroids: has a distinct structure containing four fused carbon rings. </li>
+                                <li class='info sub'>Examples include cholesterol, which is an essential component of cell membranes and serves as a precursor for steroid hormones.</li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-bot-right' id="section3-card-img-container">
+                            <img class="section3-card-img" id='lipids-card-img'><img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-card" id="nucleic-acids-card">
+                <h1 class='section3-header'>Nucleic Acids</h1>
+                <div class='section3-card-content'>
+                    <div class='section3-card-top'>
+                        <div class='section3-card-top-left'>
+                            <div class="section3-card-header">What Are Nucleic Acids?</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Lipids are a type of macromolecule that are composed of carbon, hydrogen, and oxygen atoms.</li>
+                                <li class='info'>Lipids are grouped together because of their hydrophobic qualities, as a result, all lipids are insoluble in water.</li>
+                                <li class='info'>There are three main families of lipids: fats, phospholipids, and steroids. Let’s look at each of these in a bit more detail down below.</li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-top-right'>
+                            <div class="section3-card-header">Functions</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Fats: Fats are incredibly important for energy storage and protects the organs as well as insulate the body.</li>
+                                <li class='info'>Phospholipids: Phospholipids serve essential functions in the structure of cell membranes. The structure of phospholipids allows them to form bilayers in cell membranes, creating a barrier between the cell and its environment.</li>
+                                <li class='info'>Steroids: Cholesterol is a component of the plasma membranes in animal cells that helps keep membranes flexible and fluid. It is also the precursor to many other important steroids, such as the sex hormones testosterone, estradiol, and progesterone.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='section3-card-bot'>
+                        <div class='section3-card-bot-left' id='section3-card-img'>
+                            <div class="section3-card-header">Types</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Fats: consists of three fatty acid molecules bonded to a glycerol molecule. Thus they are also know as triglycerides.</li>
+                                <li class='info sub'>The fatty acids are linked to the glycerol backbone through the process of dehydration synthesis.</li>
+                                <li class='info sub'>Saturated fats contain only single bonds between carbon atoms. Unsaturated fatty acids have at least one double bond in their chains.</li>
+                                <li class='info'>Phospholipids: consists of two fatty acids and a phosphate group (PO4) bound to glycerol. </li>
+                                <li class='info sub'>While the fatty acid tails are hydrophobic, the PO4 head of a phospholipid is hydrophilic. </li>
+                                <li class='info'>Steroids: has a distinct structure containing four fused carbon rings. </li>
+                                <li class='info sub'>Examples include cholesterol, which is an essential component of cell membranes and serves as a precursor for steroid hormones.</li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-bot-right' id="section3-card-img-container">
+                            <img class="section3-card-img" id='lipids-card-img'><img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-card" id="carbohydrates-card">
+            
+            </div>
+        </div>
+    `
+   
     const blackBottom = dom.createDom('div', 'black-bottom');
-    section3LeftPart.append(section3LeftPartTop,section3LeftPartBot);
 
-    const section3LeftHeader = dom.createDom('div', 'section3-header', 'macro-section3-left-header');
-    section3LeftHeader.innerHTML = 'Proteins'
-    const section3LeftInfo = dom.createDom('div', 'section3-info', 'macro-section3-left-info');
-    section3LeftInfo.innerHTML =     
-    `<ul class="section3-info">
-        <li class='info'>Cohesion - the attraction of water molecules to other water molecules. This is possible due to their ability to form hydrogen bonds with one another.</li>
-        <li class='info'>This is what allows water to stick together and form bodies of water. Ex: lakes, ponds, etc.</li>
-        <li class='info'>Is responsible for surface tension, a phenomenon that results in the tendency of a liquid’s surface to resist rupture when placed under tension or stress.</li>
-    </ul>
-    `;
-    const section3LeftImage = dom.createDom('img', 'section3-img', 'macro-section3-left-img')
-    section3LeftImage.src = 'images/Cohesion.png';
-    section3left.append(section3LeftHeader, section3LeftInfo, section3LeftImage);
-
-    const section3MidHeader = dom.createDom('div', 'section3-header', 'macro-section3-mid-header');
-    section3MidHeader.innerHTML = 'Lipids'
-    const section3MidInfo = dom.createDom('div', 'section3-info', 'macro-section3-mid-info');
-    section3MidInfo.innerHTML =     
-    `<ul class="section3-info">
-        <li class='info'>Adhesion - the attraction of molecules of one kind for molecules of a different kind.</li>
-        <li class='info'>This is what allows for capillary action, which depends on the attraction between water molecules and the walls of the tube (adhesion), as well as the interactions between water molecules (cohesion).</li>
-        <li class='info'>Plants rely of cohesion and adhesion in order help bring water up through its roots and disperse it throughout the plant.</li>
-    </ul>
-    `;
-    const section3MidImage = dom.createDom('img', 'section3-img', 'macro-section3-mid-img')
-    section3MidImage.src = 'images/Adhesion.png';
-    section3mid.append(section3MidHeader, section3MidInfo, section3MidImage);
-
-    const section3RightHeader = dom.createDom('div', 'section3-header', 'macro-section3-right-header');
-    section3RightHeader.innerHTML = 'Nucleic Acids'
-    const section3RightInfo = dom.createDom('div', 'section3-info', 'macro-section3-right-info');
-    section3RightInfo.innerHTML = `
-    <ul class="section3-info">
-        <li class='info'>Specific Heat - the amount of heat needed to raise the temperature of one gram of a substance by one degree Celsius. </li>
-        <li class='info'>Water's high specific heat is one of the reasons that water is essential to life. This means that water "takes longer" to heat up as it requires more energy. </li>
-        <li class='info'>The high specific heat of water is significant since it allows water to act as a thermoregulator, and thus can ensure that numerous systems can remain at the same temperature.</li>
-        <li class='info'>Ex: Animals living in marine enviroments don't have to worry about changes in water temperature as it remains relatively stable throughout the year due to water's
-         high specific heat. A change in water temperature could devastate an entire community. Thus this is why water's high specific heat is essetnial life.</li>
-    </ul>
-    `;
-    const section3RightImage = dom.createDom('img', 'section3-img', 'macro-section3-right-img')
-    section3RightImage.src = 'images/Koi.png';
-    section3right.append(section3RightHeader, section3RightInfo, section3RightImage);
-
-    const section3RightestHeader = dom.createDom('div', 'section3-header', 'macro-section3-4-header');
-    section3RightestHeader.innerHTML = 'Carbohydrates'
-    const section3RightestInfo = dom.createDom('div', 'section3-info', 'macro-section3-4-info');
-    section3RightestInfo.innerHTML = `
-    <ul class="section3-info">
-        <li class='info'>Specific Heat - the amount of heat needed to raise the temperature of one gram of a substance by one degree Celsius. </li>
-        <li class='info'>Water's high specific heat is one of the reasons that water is essential to life. This means that water "takes longer" to heat up as it requires more energy. </li>
-        <li class='info'>The high specific heat of water is significant since it allows water to act as a thermoregulator, and thus can ensure that numerous systems can remain at the same temperature.</li>
-        <li class='info'>Ex: Animals living in marine enviroments don't have to worry about changes in water temperature as it remains relatively stable throughout the year due to water's
-         high specific heat. A change in water temperature could devastate an entire community. Thus this is why water's high specific heat is essetnial life.</li>
-    </ul>
-    `;
-    const section3RightestImage = dom.createDom('img', 'section3-img', 'macro-section3-right-img')
-    section3RightestImage.src = 'images/Koi.png';
-    section3rightest.append(section3RightestHeader, section3RightestInfo, section3RightestImage);
-
-    section3Content.append(section3LeftPart,section3left, section3mid, section3right, section3rightest);
     section3.append(section3Content, blackBottom);
 
     //section 4 - sources
