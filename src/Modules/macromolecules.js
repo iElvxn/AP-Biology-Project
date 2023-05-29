@@ -190,44 +190,91 @@ function loadMacroPage() {
                         <div class='section3-card-top-left'>
                             <div class="section3-card-header">What Are Nucleic Acids?</div>
                             <ul class='section3-info'>
-                                <li class='info'>Lipids are a type of macromolecule that are composed of carbon, hydrogen, and oxygen atoms.</li>
-                                <li class='info'>Lipids are grouped together because of their hydrophobic qualities, as a result, all lipids are insoluble in water.</li>
-                                <li class='info'>There are three main families of lipids: fats, phospholipids, and steroids. Let’s look at each of these in a bit more detail down below.</li>
+                                <li class='info'>Nucleic acids are macromolecules made out of units called nucleotides. </li>
+                                <li class='info sub'>Each nucleotide in DNA contains one of four possible nitrogenous bases: adenine (A), guanine (G) cytosine (C), and thymine (T).</li>
+                                <li class='info sub'>In RNA thymine (T) is replaced with uracil (U).</li>
+                                <li class='info'>They carry the genetic blueprint of a cell and carry instructions for the functioning of the cell.</li>
+                                <li class='info'>There are two main naturally occurring varieties: deoxyribonucleic acid (DNA) and ribonucleic acid (RNA). Let’s look at both of these in a bit more detail down below.</li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-top-right'>
+                            <div class="section3-card-header">DNA/RNA</div>
+                            <ul class='section3-info'>
+                                <li class='info'>DNA is the genetic material found in all living organisms,</li>
+                                <li class='info sub'>It is found in the nucleus of eukaryotes and in the organelles, chloroplasts, and mitochondria.</li>
+                                <li class='info'>Messenger RNA (mRNA) serves as a messenger between DNA and the ribosomes, molecular machines that read mRNA sequences and use them to build proteins.</li>
+                                <li class='info sub'>mRNA trasnscribes the DNA, and is translated b the ribosome.</li>
+                                <li class='info'>Ribosomal RNAs (rRNAs) serve as structural components of ribosomes.</li>
+                                <li class='info'>Transfer RNAs (tRNAs) are RNA molecules that bring amino acids to the ribosome for protein synthesis.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='section3-card-bot'>
+                        <div class='section3-card-bot-left'>
+                            <div class="section3-card-header">Structure</div>
+                            <ul class='section3-info'>
+                                <li class='info'>DNA and RNA are polymers (in the case of DNA, often very long polymers), and are made up of monomers known as nucleotides.</li>
+                                <li class='info'>Adenine and guanine are purines, meaning that their structures contain two fused carbon-nitrogen rings. Cytosine, thymine and uracil, in contrast, are pyrimidines and have a single carbon-nitrogen ring. </li>
+                                <li class='info'>The five-carbon sugar in DNA is called deoxyribose, while in RNA, the sugar is ribose. </li>
+                                <li class='info'>Nucleotides may have a single phosphate group, or a chain of up to three phosphate groups, attached to the 5’ carbon of the sugar.</li>
+                                <li class='info'>DNA, chains are typically found in a double helix. </li>
+                                <li class='info'>The sugars and phosphates lie on the outside of the helix, forming the backbone of the DNA: called the sugar-phosphate backbone.</li>
+                                <li class='info'>The nitrogenous bases extend into the interior, like the steps of a staircase, in pairs; the bases of a pair are bound to each other by hydrogen bonds.</li>
+                            </ul>
+                        </div>
+
+                        <div class='section3-card-bot-right' id="section3-card-img-container">
+                            <img class="section3-card-img" id='dnarna-card-img'><img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3-card" id="carbohydrates-card">
+                <h1 class='section3-header'>Carbohydrates</h1>
+                <div class='section3-card-content'>
+                    <div class='section3-card-top'>
+                        <div class='section3-card-top-left'>
+                            <div class="section3-card-header">What Are Carbohydrates?</div>
+                            <ul class='section3-info'>
+                                <li class='info'>Carbohydrates, are energy storing organic compound molecules made up of carbon, hydrogen, and oxygen in a 1:2:1 ratio. </li>
+                                <li class='info sub'>All carbohydrates are made up of sugar monomers. </li>
+                                <li class='info'>Carbohydrate chains come in different lengths, and biologically important carbohydrates belong to three categories: monosaccharides, disaccharides, and polysaccharides. </li>
                             </ul>
                         </div>
 
                         <div class='section3-card-top-right'>
                             <div class="section3-card-header">Functions</div>
                             <ul class='section3-info'>
-                                <li class='info'>Fats: Fats are incredibly important for energy storage and protects the organs as well as insulate the body.</li>
-                                <li class='info'>Phospholipids: Phospholipids serve essential functions in the structure of cell membranes. The structure of phospholipids allows them to form bilayers in cell membranes, creating a barrier between the cell and its environment.</li>
-                                <li class='info'>Steroids: Cholesterol is a component of the plasma membranes in animal cells that helps keep membranes flexible and fluid. It is also the precursor to many other important steroids, such as the sex hormones testosterone, estradiol, and progesterone.</li>
+                                <li class='info'>Polysaccharides serve important functions with regards to cell structure and storage in both plants and animals.</li>
+                                <li class='info'>In plants, cellulose is essential for making cell walls and providing structure.</li>
+                                <li class='info'> Starch is necessary for sugar storage. </li>
+                                <li class='info sub'>Has two primary forms: amylose and amylopectin.</li>
+                                <li class='info'>Glycogen is the storage form of glucose in humans and other vertebrates.</li>
+                                <li class='info sub'>Glycogen is usually stored in liver and muscle cells. Whenever blood glucose levels decrease, glycogen is broken down via hydrolysis to release glucose monomers that cells can absorb and use.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class='section3-card-bot'>
-                        <div class='section3-card-bot-left' id='section3-card-img'>
+                        <div class='section3-card-bot-left'>
                             <div class="section3-card-header">Types</div>
                             <ul class='section3-info'>
-                                <li class='info'>Fats: consists of three fatty acid molecules bonded to a glycerol molecule. Thus they are also know as triglycerides.</li>
-                                <li class='info sub'>The fatty acids are linked to the glycerol backbone through the process of dehydration synthesis.</li>
-                                <li class='info sub'>Saturated fats contain only single bonds between carbon atoms. Unsaturated fatty acids have at least one double bond in their chains.</li>
-                                <li class='info'>Phospholipids: consists of two fatty acids and a phosphate group (PO4) bound to glycerol. </li>
-                                <li class='info sub'>While the fatty acid tails are hydrophobic, the PO4 head of a phospholipid is hydrophilic. </li>
-                                <li class='info'>Steroids: has a distinct structure containing four fused carbon rings. </li>
-                                <li class='info sub'>Examples include cholesterol, which is an essential component of cell membranes and serves as a precursor for steroid hormones.</li>
+                                <li class='info'>Monosaccharides- simple sugars that have a single sugar monomer.</li>
+                                <li class='info sub'>The three main examples of monosaccharides are glucose, fructose, and galactose.</li>
+                                <li class='info'>Disaccharides form when two monosaccharides join together via dehydration synthesis or condesation.</li>
+                                <li class='info sub'> The prefix di-, meaning two, have two sugar subunits. </li>
+                                <li class='info sub'>The main types of disaccharides to know are maltose, lactose, and sucrose.</li>
+                                <li class='info'>Polysaccharide - a long chain of monosaccharides linked by glycosidic bonds.</li>
                             </ul>
                         </div>
 
                         <div class='section3-card-bot-right' id="section3-card-img-container">
-                            <img class="section3-card-img" id='lipids-card-img'><img>
+                            <img class="section3-card-img" id='dnarna-card-img'><img>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section3-card" id="carbohydrates-card">
-            
             </div>
         </div>
     `
@@ -247,18 +294,28 @@ function loadMacroPage() {
     const section4Sources = dom.createDom('div', 'section4-sources', 'macro-section4-sources');
     section4Sources.innerHTML = `
     <div>
-        <p>“15.1: Structure of Water.” Chemistry LibreTexts, 8 August 2022,</p>
-        <a href ='https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/15%3A_Water/15.01%3A_Structure_of_Water'>https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/15%3A_Water/15.01%3A_Structure_of_Water</a>
+        <p>“Carbohydrates (article) | Chemistry of life.” Khan Academy, </p>
+        <a href ='https://www.khanacademy.org/science/ap-biology/chemistry-of-life/properties-structure-and-function-of-biological-macromolecules/a/carbohydrates'>https://www.khanacademy.org/science/ap-biology/chemistry-of-life/properties-structure-and-function-of-biological-macromolecules/a/carbohydrates</a>
     </div>
     
     <div>
-        <p>“Specific heat, heat of vaporization, and density of water (article).” Khan Academy, </p>
-        <a href='https://www.khanacademy.org/science/ap-biology/chemistry-of-life/structure-of-water-and-hydrogen-bonding/a/specific-heat-heat-of-vaporization-and-freezing-of-water'>https://www.khanacademy.org/science/ap-biology/chemistry-of-life/structure-of-water-and-hydrogen-bonding/a/specific-heat-heat-of-vaporization-and-freezing-of-water</a>
+        <p>“Nucleic acids (article).” Khan Academy, </p>
+        <a href='https://www.khanacademy.org/science/ap-biology/gene-expression-and-regulation/dna-and-rna-structure/a/nucleic-acids'>https://www.khanacademy.org/science/ap-biology/gene-expression-and-regulation/dna-and-rna-structure/a/nucleic-acids</a>
     </div>
     
     <div>
-        <p>“Cohesion and adhesion of water (article).” Khan Academy, </p>
-        <a href='https://www.khanacademy.org/science/ap-biology/chemistry-of-life/structure-of-water-and-hydrogen-bonding/a/cohesion-and-adhesion-in-water'>https://www.khanacademy.org/science/ap-biology/chemistry-of-life/structure-of-water-and-hydrogen-bonding/a/cohesion-and-adhesion-in-water</a>
+        <p>“Proteins: AP® Biology Crash Course Review.” Albert.io, 1 March 2022, </p>
+        <a href='https://www.albert.io/blog/proteins-ap-biology-crash-course/'>https://www.albert.io/blog/proteins-ap-biology-crash-course/</a>
+    </div>
+
+    <div>
+        <p>“3.5 Nucleic Acids - Biology for AP® Courses.” OpenStax, 8 March 2018, </p>
+        <a href='https://openstax.org/books/biology-ap-courses/pages/3-5-nucleic-acids'>https://openstax.org/books/biology-ap-courses/pages/3-5-nucleic-acids</a>
+    </div>
+
+    <div>
+        <p>“3.3 Lipids - Biology for AP® Courses.” OpenStax, 8 March 2018, </p>
+        <a href='https://openstax.org/books/biology-ap-courses/pages/3-3-lipids'>https://openstax.org/books/biology-ap-courses/pages/3-3-lipids</a>
     </div>
     `
     section4left.append(section4Sources);

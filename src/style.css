@@ -501,7 +501,6 @@ li.info:before {
     height: auto;  
     border-radius: 45px; 
     padding: 25px;
-
 }
 
 .black-bottom {
@@ -541,7 +540,6 @@ li.info:before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 15px;
     padding: 25px 0px 25px 75px;
     width: 65%;
@@ -713,13 +711,17 @@ p.word {
 
   .section3-card-top-right,
   .section3-card-top-left,
-  .section3-card-bot-right,
   .section3-card-bot-left {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+
+  .section3-card-bot-right {
+    height: 100%;
+    width: 100%;
   }
 
   .section3-card-top-right > .section3-info,
@@ -736,7 +738,7 @@ p.word {
     align-items: center;
   }
 
-  .section3-card-img {
+  .aaaaaaaaaaaaaaaaaaaaaasection3-card-img {
     width: 100%;
     height: 100%;
     max-width: 100%;
@@ -748,6 +750,14 @@ p.word {
     object-position: center;
     padding: 0px;
   }
+
+  .section3-card-img {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+
   .section3-card-img:hover {
     transition-duration: 700ms;
     scale: 1.3;
@@ -759,6 +769,10 @@ p.word {
 
 #lipids-card-img {
     background-image: url(images/Phospholipid.gif);
+}
+
+#dnarna-card-img {
+    background-image: url(images/Nucleotide.gif);
 }
 
 .sub {
