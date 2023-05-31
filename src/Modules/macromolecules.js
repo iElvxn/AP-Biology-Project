@@ -271,7 +271,7 @@ function loadMacroPage() {
                         </div>
 
                         <div class='section3-card-bot-right' id="section3-card-img-container">
-                            <img class="section3-card-img" id='dnarna-card-img'><img>
+                            <img class="section3-card-img" id='carbs-card-img'><img>
                         </div>
                     </div>
                 </div>
@@ -280,6 +280,7 @@ function loadMacroPage() {
     `
    
     const blackBottom = dom.createDom('div', 'black-bottom');
+    blackBottom.innerHTML = 'DRAG FOR MORE INFORMATION'
 
     section3.append(section3Content, blackBottom);
 

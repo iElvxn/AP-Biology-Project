@@ -6,18 +6,42 @@ function loadWaterPage() {
     loadHome.createHeader();
 
     //section 1
-    const section1 = dom.createDom('section', 'section1', 'water-section1');
-    const section1Right = dom.createDom('div', 'section1-right', 'water-section1-right');
-    const section1Image = dom.createDom('img', 'section1-image', 'water-section1-image');
-    section1Image.src = "images/WaterSplash.png"
+    const section1 = dom.createDom('section', 'section1', 'macro-section1');
+    section1.innerHTML = `
+        <div class='section1-left-text'>
+            <div class='line'>
+                <p class='word fancy'>
+                    <span class ="letter">W</span> <span class ="letter">a</span> <span class ="letter">t</span> <span class ="letter">e</span> <span class ="letter">r</span>
+                </p>
 
-    const section1Text = dom.createDom('div', 'section1-header', 'water-section1-text');
-    section1Text.innerHTML = 'Water Properties';
-    const section1FunFact = dom.createDom('div', 'fun-fact', 'water-section1-fact');
-    section1FunFact.innerHTML = "Fun Fact: There is the same amount of water on Earth as there was when the Earth was formed. The water from your faucet could contain molecules that dinosaurs drank.";
+                <p class='word fancy'>
+                <span class ="letter">p</span>  <span class ="letter">r</span>  <span class ="letter">o</span>  <span class ="letter">p</span>  <span class ="letter">e</span>  <span class ="letter">r</span> <span class ="letter">t</span> <span class ="letter">i</span> <span class ="letter">e</span> <span class ="letter">s</span>
+                </p>
+            </div>
 
-    section1Right.append(section1Text, section1FunFact)
-    section1.append(section1Image, section1Right)
+            <div class='line'>
+                <p class='word fancy'>
+                    <span class ="letter">C</span>  <span class ="letter">o</span>  <span class ="letter">h</span>  <span class ="letter">e</span>  <span class ="letter">s</span>  <span class ="letter">i</span> <span class ="letter">o</span> <span class ="letter">n</span>
+                </p>
+                <p class='word fancy'>
+                <span class ="letter filler">w</span> <span class ="letter">a</span>  <span class ="letter">d</span>  <span class ="letter">h</span>  <span class ="letter">e</span>  <span class ="letter">s</span> <span class ="letter">i</span> <span class ="letter">o</span> <span class ="letter">n</span>
+                </p>
+            </div>
+
+            <div class='line'>
+                <p class='word fancy'>
+                    <span class ="letter">h</span><span class ="letter">i</span><span class ="letter">g</span><span class ="letter">h</span>
+                </p>
+
+                <p class='word fancy'>
+                    <span class ="letter">s</span>  <span class ="letter">p</span> <span class ="letter">e</span> <span class ="letter">c</span>  <span class ="letter">i</span> <span class ="letter">f</span> <span class ="letter">i</span> <span class ="letter">c</span>
+                </p>
+                <p class='word fancy'>
+                <span class ="letter">h</span><span class ="letter">e</span><span class ="letter">a</span><span class ="letter">t</span>
+                </p>
+            </div> 
+        </div>
+    `
 
     //section 2
     const section2 = dom.createDom('section', 'section2', 'water-section2');

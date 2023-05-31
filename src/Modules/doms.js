@@ -1,6 +1,7 @@
 import loadHome from "./home";
 import loadWaterPage from "./water";
 import loadMacroPage from "./macromolecules";
+import loadFunctionGroupsPage from "./functionalgroups";
 
 const dom = (() => {
 
@@ -8,7 +9,7 @@ const dom = (() => {
         const homeBtn = document.querySelectorAll('#home-btn');
         const waterBtn = document.querySelectorAll('#water-btn');
         const macromoleculesBtn = document.querySelectorAll('#macromolecules-btn');
-        //const dnaBtn = document.querySelectorAll('#dnarna-btn');
+        const dnaBtn = document.querySelectorAll('#functionalgroups-btn');
 
         const track = document.querySelector('.card-track')
 
@@ -22,7 +23,6 @@ const dom = (() => {
         }
 
         window.onmousemove = (e) => {
-            event.preventDefault()
 
             if(track.dataset.mouseDownAt === "0"){
                 return;
@@ -32,12 +32,11 @@ const dom = (() => {
 
             const percentage = (mouseDelta / maxDelta) * -100;
             const nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
-            console.log(nextPercentage)
-            if(nextPercentage <= -60){
-                nextPercentage = -60;
+            if(nextPercentage <= -80){
+                nextPercentage = -80;
             }
-            if(nextPercentage >= 10){
-                nextPercentage = 10;
+            if(nextPercentage >= 15){
+                nextPercentage = 15;
             }
             
 
@@ -60,6 +59,12 @@ const dom = (() => {
         macromoleculesBtn.forEach(btn => {
             btn.addEventListener('click', () => {
                 loadPage('macro');
+            })
+        })
+
+        dnaBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                loadPage('functionalgroups');
             })
         })
     };
@@ -88,6 +93,8 @@ const dom = (() => {
         if(type === 'water'){loadWaterPage();}
 
         if(type === 'macro'){loadMacroPage();}
+
+        if(type === 'functionalgroups'){loadFunctionGroupsPage();}
 
         domEvents();
     };

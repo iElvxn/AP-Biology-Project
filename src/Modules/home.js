@@ -19,10 +19,10 @@ const loadHome = (() => {
         water.innerHTML = 'Water';
         const macromolecules = dom.createDom('li', 'link', 'macromolecules-btn');
         macromolecules.innerHTML = 'Macromolecules';
-        const dna = dom.createDom('li', 'link', 'dnarna-btn');
-        dna.innerHTML = 'DNA & RNA Structure';
+        const functionalgroups = dom.createDom('li', 'link', 'functionalgroups-btn');
+        functionalgroups.innerHTML = 'Functional Groups';
     
-        links.append(home, water, macromolecules, dna);
+        links.append(home, water, macromolecules, functionalgroups);
         header.append(logoContainer, links);
         content.append(header);
     }
@@ -39,8 +39,9 @@ const loadHome = (() => {
         const section1FunFact = dom.createDom('div', 'fun-fact', 'home-section1-fact');
         section1FunFact.innerHTML = "Fun Fact: If one person's DNA was unraveled and placed end to end, it would stretch from Pluto and back.";
 
-        const section1Btn = dom.createDom('button', null, 'learn-more-btn')
-        section1Btn.innerHTML = 'LEARN MORE'
+        const section1Btn = dom.createDom('a', null, 'learn-more-btn');
+        section1Btn.href = "#home-section2-content";
+        section1Btn.innerHTML = 'LEARN MORE';
 
         section1Left.append(section1Text, section1FunFact, section1Btn);
 
@@ -53,7 +54,7 @@ const loadHome = (() => {
 
         const waterSection = createInfoCard('WATER', "Dive into the fascinating world of water and explore its unique properties that make it essential for life.")
         const macroMoleculesSection = createInfoCard('MACRO MOLECULES', "Delve into the intricate world of macromolecules, the building blocks of life.")
-        const dnaSection = createInfoCard('DNA/RNA', "Uncover the secrets of the genetic code within our cells.")
+        const dnaSection = createInfoCard('FUNCTIONAL GROUPS', "Discover the key players in biochemical reactions—functional groups.")
 
         function createInfoCard(title, info, image) {
             let spaceRemovedString = title.split(" ").join("");
@@ -82,7 +83,7 @@ const loadHome = (() => {
     const createFooter = () => {
         const footer = dom.createDom('div', 'footer');
         footer.innerHTML = 'Built by Elvin'
-        content.append(footer);
+        content.appendChild(footer);
     }
 
     const loadHomePage = () => {
