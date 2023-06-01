@@ -204,7 +204,7 @@ function loadMacroPage() {
                                 <li class='info'>DNA is the genetic material found in all living organisms,</li>
                                 <li class='info sub'>It is found in the nucleus of eukaryotes and in the organelles, chloroplasts, and mitochondria.</li>
                                 <li class='info'>Messenger RNA (mRNA) serves as a messenger between DNA and the ribosomes, molecular machines that read mRNA sequences and use them to build proteins.</li>
-                                <li class='info sub'>mRNA trasnscribes the DNA, and is translated b the ribosome.</li>
+                                <li class='info sub'>mRNA trasnscribes the DNA, and is translated by the ribosome.</li>
                                 <li class='info'>Ribosomal RNAs (rRNAs) serve as structural components of ribosomes.</li>
                                 <li class='info'>Transfer RNAs (tRNAs) are RNA molecules that bring amino acids to the ribosome for protein synthesis.</li>
                             </ul>
